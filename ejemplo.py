@@ -1,4 +1,6 @@
 def yield_chunks(arr, chunk_size):
+    """ yields chunk_size elements of array till array length
+    """
     larr = len(arr)
     if larr < chunk_size:
         raise ValueError("The array length (%d) must be larger than the chunk size (%d)" % (len(arr), chunk_size))
